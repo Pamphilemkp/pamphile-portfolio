@@ -5,7 +5,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contacts from './pages/Contacts';
-import AppBackground from './components/AppBackground';
+// import AppBackground from './components/AppBackground';
 import PageNotFound from './pages/PageNotFound';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path="/Contacts" element={<Contacts />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
-      <AppBackground />
+      {/* <AppBackground /> */}
     </div>
   );
 }
