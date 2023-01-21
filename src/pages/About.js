@@ -4,7 +4,7 @@ import AboutMe from '../components/About/AboutMe';
 
 function About() {
   return (
-    <div>
+    <div className="About-container">
       <NavBar />
       <AboutMe />
     </div>
