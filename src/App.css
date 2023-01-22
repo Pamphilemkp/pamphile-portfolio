@@ -1,0 +1,102 @@
+/* Skills page */
+
+.Skills-container {
+  width: 95vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  align-content: center;
+}
+
+.Skills-contents {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+.Skills-contents .skiils-navbar {
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px;
+  border-right: dotted 1px var(--whiteColor);
+}
+
+.skiils-navbar img {
+  width: 7vw;
+  height: 14vh;
+  border-radius: 100%;
+}
+
+.skiils-navbar h2 {
+  font-size: 19px;
+}
+
+.skiils-navbar h2 span {
+  color: var(--mainColor);
+}
+
+.skiils-navbar .skills-icon-container {
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: dotted 1px var(--whiteColor);
+  padding: 10px;
+}
+
+.skiils-navbar .skills-icon-container a {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+.skiils-navbar .skills-icon-container a:hover {
+  color: var(--mainColor);
+}
+
+.cv-button {
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  padding: 10px 20px;
+  border: solid 1px black;
+  border-radius: 20px;
+  width: 150px;
+}
+
+.cv-button:hover {
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+}
+
+.skills-parts ul {
+  padding: 0;
+}
+
+.skills-parts ul li {
+  list-style-type: none;
+}
+
+.skills-parts {
+  overflow-y: scroll;
+  height: 70vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+}
+
+.skills-parts h3 {
+  margin-bottom: 10px;
+}

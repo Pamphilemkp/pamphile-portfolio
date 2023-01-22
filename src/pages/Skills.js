@@ -1,12 +1,12 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
+import SkillsList from '../components/Skills/SkillsList';
 
 function Skills() {
   return (
-    <div>
+    <div className="Skills-container">
       <NavBar />
-      <p>Skills page</p>
-      <p>Try</p>
+      <SkillsList />
     </div>
   );
 }

@@ -1,11 +1,12 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
+import SomeProjects from '../components/Projects/SomeProjects';
 
 function Projects() {
   return (
     <div>
       <NavBar />
-      <p>Projects page</p>
+      <SomeProjects />
     </div>
   );
 }
