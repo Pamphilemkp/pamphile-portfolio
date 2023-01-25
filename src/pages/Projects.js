@@ -1,10 +1,9 @@
-import React from 'react';
 import NavBar from '../components/NavBar';
 import SomeProjects from '../components/Projects/SomeProjects';
 
 function Projects() {
   return (
-    <div>
+    <div className="project-container">
       <NavBar />
       <SomeProjects />
     </div>
