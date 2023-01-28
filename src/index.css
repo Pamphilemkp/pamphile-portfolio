@@ -48,8 +48,7 @@ body {
 
 .home-contents,
 .about-contents,
-.Contact-contents
-.project-contents {
+.Contact-contents {
   width: 90vw;
   min-height: 90vh;
   display: flex;
@@ -303,9 +302,40 @@ textarea {
 .project-container {
   color: var(--whiteColor);
   flex-direction: column;
-  
 }
 
-.project-container .image-project{
-  width: 80vw;
+.project-contents {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-contents img {
+  width: 200px;
+  height: 200px;
+}
+
+.slick-slider {
+  width: 60vw;
+}
+
+.slick-list {
+  padding: 0px;
+  margin: 0px;
+  width: 60vw;
+}
+
+.slick-dots {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  display: flex;
+  height: 5vh;
+}
+
+.slick-dots li {
+  list-style: none;
+  color: white;
 }
