@@ -2,11 +2,12 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/jsx-props-no-spreading */
+import { useState } from 'react';
 import Slider from 'react-slick';
 import ProjectStore from './ProjectStore';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import PopUp from './PopUp';
+import Modal from './Modal';
 
 function Project() {
   const sliderSettings = {
@@ -39,17 +40,32 @@ function Project() {
 
   };
 
+  const [isOpen, setOpen] = useState(false);
+  const [itemId, setId] = useState(null);
+
   return (
     <div className="project-contents">
+      <div className="project title">
+        <h1>Projects</h1>
+        <p>
+          Here are a few of my projects some are deployed
+          you can see the live and the source but order are still under deployment
+          only the source of the project are visible but all the projects will be
+          soon deployed
+          {' '}
+
+        </p>
+      </div>
       <Slider {...sliderSettings}>
         {ProjectStore.map(({ id, title, photo }) => (
-          <div key={id} onClick={<PopUp />}>
+          <div key={id} onClick={() => { setId(id); setOpen(true); }}>
             <img src={photo} alt={title} />
             <p>{title}</p>
           </div>
         ))}
         {/* <ul>{dots}</ul> */}
       </Slider>
+      <Modal open={isOpen} close={() => setOpen(false)} id={itemId} />
     </div>
   );
 }

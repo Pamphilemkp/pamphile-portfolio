@@ -307,9 +307,10 @@ textarea {
 .project-contents {
   width: 90vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 50px;
 }
 
 .project-contents img {
@@ -338,4 +339,23 @@ textarea {
 .slick-dots li {
   list-style: none;
   color: white;
+}
+
+/* popUp(Modal) */
+.popup-container {
+  width: 75vw;
+  height: 75vh;
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  transform: (-50%, -50%);
+  z-index: 100;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+}
+
+.popup-contents {
+  width: 50%;
+  background-color: rgba(135, 242, 128, .3);
 }
