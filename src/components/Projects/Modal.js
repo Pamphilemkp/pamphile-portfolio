@@ -3,6 +3,8 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/prop-types */
 import ReactDOM from 'react-dom';
+import { FaGithub, FaPowerOff } from 'react-icons/fa';
+import { GoX } from 'react-icons/go';
 import ProjectStore from './ProjectStore';
 
 function Modal({ open, id, close }) {
@@ -14,10 +16,31 @@ function Modal({ open, id, close }) {
   return ReactDOM.createPortal(
     <div className="popup-container">
       <div className="popup-contents">
-        <p onClick={close}>X</p>
+        <p onClick={close} className="close-icon">
+          {' '}
+          <GoX />
+        </p>
         <div className="popup-items">
-          <p>{item.title}</p>
-          <p>{id}</p>
+          <img src={item.photo} alt={item.title} />
+          <h2>{item.title}</h2>
+          <p>{item.description}</p>
+          <h3>built with</h3>
+          <ul>
+            {item.language.map((tool) => (
+              <li key={item.id}>{tool}</li>
+            ))}
+          </ul>
+          <div className="source-live">
+            <a href={item.source}>
+              See source
+              {' '}
+              <span className="source-icon"><FaGithub /></span>
+            </a>
+            <a href={item.live}>
+              See live
+              <span className="live-icon"><FaPowerOff /></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>,

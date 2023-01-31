@@ -98,6 +98,19 @@ function SkillsList() {
           </ul>
         </div>
 
+        <div className="programming-skills">
+          <h3>WordPress</h3>
+          <ul className="backend-list">
+            <li>
+              <div className="code-skill">
+                <p>Project Management</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
         <div className="tools-methods-tests">
           <h3>Tools, Tests & Methods</h3>
           <ul className="tool-methos">

@@ -11,7 +11,9 @@ function Home() {
         <span>👋</span>
       </p>
       <h1 className="title">
-        I’m Pamphile MKP
+        I’m Pamphile
+        {' '}
+        <span className="mkp-span"> MKP</span>
         {' '}
         <br />
         Glad to see you here!

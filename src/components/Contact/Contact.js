@@ -31,10 +31,10 @@ function Contact() {
         </div>
         <form className="form-items">
           <div className="fields">
-            <input type="text" placeholder="Full-name" />
-            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Enter Full-name" />
+            <input type="email" placeholder="Enter Email" />
           </div>
-          <textarea placeholder="Message" />
+          <textarea placeholder="Enter Message" />
           <input type="submit" value="Submit message" className="submit" />
         </form>
       </div>

@@ -45,27 +45,31 @@ function Project() {
 
   return (
     <div className="project-contents">
-      <div className="project title">
+      <div className="project-title">
         <h1>Projects</h1>
         <p>
-          Here are a few of my projects some are deployed
-          you can see the live and the source but order are still under deployment
-          only the source of the project are visible but all the projects will be
-          soon deployed
+          Here are a few of my projects some are deployed hence
+          you can see the live version and the source but others are still under deployment
+          only the source of the project is visible but all the projects will be
+          soon deployed for you to see the live demo.
           {' '}
 
         </p>
       </div>
       <Slider {...sliderSettings}>
         {ProjectStore.map(({ id, title, photo }) => (
-          <div key={id} onClick={() => { setId(id); setOpen(true); }}>
+          <div key={id} onClick={() => { setId(id); setOpen(true); }} className="image-sliding-container">
             <img src={photo} alt={title} />
-            <p>{title}</p>
+            <h2>{title}</h2>
           </div>
         ))}
         {/* <ul>{dots}</ul> */}
       </Slider>
-      <Modal open={isOpen} close={() => setOpen(false)} id={itemId} />
+      <Modal
+        open={isOpen}
+        close={() => setOpen(false)}
+        id={itemId}
+      />
     </div>
   );
 }
