@@ -8,7 +8,6 @@
   --transparentColor: rgba(96, 94, 94, 0.3);
 }
 
-
 /* Skills page */
 
 .Skills-container {
@@ -125,7 +124,6 @@
 .skills-parts h3 {
   margin-bottom: 10px;
 }
-
 
 /* NavBar For desktop */
 .mobile-hamburger {
@@ -406,9 +404,7 @@
     margin-bottom: 170px;
   }
 
-
   /* Contact page responsiveness */
-
   .Contact-container {
     width: 95vw;
     min-height: 100vh;

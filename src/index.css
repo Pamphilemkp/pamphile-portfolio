@@ -249,7 +249,6 @@ h3 {
   color: var(--mainColor);
 }
 
-
 /* Social media icons */
 
 .whatsapp {
@@ -417,7 +416,6 @@ textarea {
   display: flex;
   height: 5vh;
 }
-
 
 /* PopUp(Modal) */
 .popup-container {
