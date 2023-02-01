@@ -1,6 +1,6 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 :root {
   --mainColor: rgb(65, 105, 225);
   --whiteColor: #fff;
@@ -105,8 +105,23 @@ body {
   gap: 5vw;
 }
 
+.project-contents img {
+  width: 200px;
+  height: 200px;
+}
+
+.popup-items img {
+  width: 400px;
+  height: 300px;
+}
+
 .about-contents .let-connect img {
   width: 15vw;
+  border-radius: 10px;
+}
+
+.project-title p {
+  width: 50vw;
 }
 
 .about-contents .let-connect p {
@@ -123,6 +138,11 @@ body {
   gap: 30px;
 }
 
+.popup-items h2,
+h3 {
+  color: var(--whiteColor);
+}
+
 .about-contents .languages h2 {
   align-self: flex-start;
 }
@@ -133,6 +153,26 @@ body {
   align-items: center;
   gap: 30px;
   padding: 0;
+}
+
+.slick-dots li {
+  list-style: none;
+  color: white;
+}
+
+.popup-items ul li {
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--mainColor);
+  background: var(--whiteColor);
 }
 
 .languages .languages-spoken-list li {
@@ -181,15 +221,34 @@ body {
   justify-content: center;
 }
 
+.popup-items a {
+  color: var(--whiteColor);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: var(--mainColor);
+  transition: all 0.3s ease;
+}
+
 .Contact-info .contact-link-container a {
   color: var(--whiteColor);
   text-decoration: none;
+}
+
+.popup-items a:hover {
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
 }
 
 .about-contents .media-icons li a {
   text-decoration: none;
   font-size: 2rem;
 }
+
+.Contact-info .contact-link-container a:hover {
+  color: var(--mainColor);
+}
+
 
 /* Social media icons */
 
@@ -262,10 +321,6 @@ body {
   width: 30vw;
 }
 
-.Contact-info .contact-link-container a:hover {
-  color: var(--mainColor);
-}
-
 .form-items .fields {
   display: flex;
   width: 25vw;
@@ -277,7 +332,6 @@ body {
   width: 12vw;
   background: var(--transparentColor);
   border-radius: 10px;
-  padding: 10px;
   color: var(--whiteColor);
   border: none;
   outline: none;
@@ -293,7 +347,7 @@ textarea {
   outline: none;
   color: var(--whiteColor);
   font-size: 15px;
-  padding:  20px;
+  padding: 20px;
 }
 
 .submit {
@@ -338,10 +392,6 @@ textarea {
   align-items: center;
 }
 
-.project-title p {
-  width: 50vw;
-}
-
 .project-contents .image-sliding-container {
   cursor: pointer;
 }
@@ -350,33 +400,24 @@ textarea {
   align-self: center;
 }
 
-.project-contents img {
-  width: 200px;
-  height: 200px;
-}
-
 .slick-slider {
   width: 60vw;
 }
 
 .slick-list {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   width: 60vw;
 }
 
 .slick-dots {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   color: white;
   display: flex;
   height: 5vh;
 }
 
-.slick-dots li {
-  list-style: none;
-  color: white;
-}
 
 /* PopUp(Modal) */
 .popup-container {
@@ -408,9 +449,8 @@ textarea {
   align-items: center;
   gap: 20px;
   z-index: 2;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
-
 
 .popup-items {
   display: flex;
@@ -420,50 +460,12 @@ textarea {
   gap: 20px;
 }
 
-.popup-items h2, h3 {
-color: var(--whiteColor);
-}
-
-.popup-items img {
-  width: 400px;
-  height: 300px;
-}
-
 .popup-items ul {
-  padding: 0px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-}
-
-.popup-items ul li {
-  list-style: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: var(--mainColor);
-  background: var(--whiteColor);
-}
-
-.popup-items a {
-  color: var(--whiteColor);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 50px;
-  background-color: var(--mainColor);
-  transition: all .3s ease;
-}
-
-.popup-items a:hover{
-  color: var(--blackColor);
-  background-color: var(--whiteColor);
 }
 
 .popup-items .source-live {
@@ -472,7 +474,8 @@ color: var(--whiteColor);
   gap: 20px;
 }
 
-.source-live .source-icon, .live-icon {
+.source-live .source-icon,
+.live-icon {
   margin-left: 15px;
 }
 

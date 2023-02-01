@@ -11,14 +11,14 @@ function AboutMe() {
     <div className="about-contents">
       <div className="let-connect">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9xq7KgImoaTx6rqbS29quEv-Ar10Yd53tg&usqp=CAU"
+          src="https://avatars.githubusercontent.com/u/98436409?v=4"
           aria-hidden
           alt="my online profile picture"
         />
         <p>
           My name is Pamphile Musonda, i am a full-stack web developer,
           i play chess in my spare time, like working out and reading books.
-          in love with boxing that i started since i am 14.
+          in love with boxing that i started since i was 14.
           and I'm very passionate and dedicated to my work.
           finally i like travelling as a hobby and seekeng for
           new interesting opportuities.

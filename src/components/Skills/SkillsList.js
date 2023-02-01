@@ -10,7 +10,7 @@ function SkillsList() {
     <div className="Skills-contents">
       <div className="skiils-navbar">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9xq7KgImoaTx6rqbS29quEv-Ar10Yd53tg&usqp=CAU"
+          src="https://avatars.githubusercontent.com/u/98436409?v=4"
           aria-hidden
           alt="my online profile picture"
         />

@@ -1,9 +1,15 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import {
   FaMapMarkedAlt, FaWhatsapp, FaEnvelope, FaLinkedin,
 } from 'react-icons/fa';
 
 function Contact() {
+  const [state, handleSubmit] = useForm('xwkjvwje');
+  if (state.succeeded) {
+    return <p>Thanks for reaching out to me, i try will get back to you ASAP!</p>;
+  }
   return (
     <div className="Contact-contents">
       <h2>
@@ -29,13 +35,25 @@ function Contact() {
             <a href="https://linkedin.com/in/pamphile-musonda">@pamphile-musonda</a>
           </div>
         </div>
-        <form className="form-items">
+        <form onSubmit={handleSubmit} className="form-items">
           <div className="fields">
-            <input type="text" placeholder="Enter Full-name" />
-            <input type="email" placeholder="Enter Email" />
+            <ValidationError
+              field="full-name"
+              errors={state.errors}
+            />
+            <input type="text" placeholder="Enter Full-name" className="input" required />
+            <ValidationError
+              field="email"
+              errors={state.errors}
+            />
+            <input type="email" placeholder="Enter Email" name="email" className="input" required />
           </div>
-          <textarea placeholder="Enter Message" />
-          <input type="submit" value="Submit message" className="submit" />
+          <textarea placeholder="Enter Message" name="message" required />
+          <ValidationError
+            field="textarea"
+            errors={state.errors}
+          />
+          <input type="submit" value="Submit message" className="submit" disabled={state.submitting} />
         </form>
       </div>
     </div>
