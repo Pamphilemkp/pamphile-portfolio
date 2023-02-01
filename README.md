@@ -1,15 +1,14 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Pamphile's Portfolio
 
-> Description the project.
+> Portfolio app built with react
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages : JavaScript
+- Frameworks: React
+- Technologies used: Git, Github, linters
 
 ## Live Demo (if available)
 
@@ -17,9 +16,11 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- clone this repository
+- cd into the App name
+- Run `NPM INSTALL`
+- Then `NPM START`
+- Open your default browser to see the live version
 
 
 To get a local copy up and running follow these simple example steps.
@@ -28,35 +29,34 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
+- Run `NPM INSTALL`
+- Then `NPM START`
+
 ### Install
+
+- Run `NPM INSTALL`
 
 ### Usage
 
-### Run tests
+- Run `git clone https://github.com/Pamphilemkp/pamphile-portfolio.git`
+- Then `cd pamphile-portfolio`
+- Run `NPM INSTALL`
+- Then `NPM START`
 
-### Deployment
 
+## Author
 
+👤 **Pamphile MKP**
 
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub:   [@pamphilemkp](https://github.com/pamphilemkp)
+- Twitter:  [@pamphilemkp](https://Twitter.com/PamphileMusonda)
+- LinkedIn: [@pamphilemkp](https://www.linkedin.com/in/pamphile-musonda)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Pamphilemkp/pamphile-portfolio/issues/).
 
 ## Show your support
 
