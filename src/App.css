@@ -184,12 +184,12 @@
     font-family: 'Poppins', serif;
     font-weight: 500;
     transition: all 0.3s ease;
-    line-height: 27.2px;
-    font-size: 18px;
+    line-height: 30px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: left;
-    gap: 20px;
+    gap: 25px;
     width: 50vw;
   }
 
@@ -207,16 +207,20 @@
   }
 
   /* Home page responsiveness */
+  .home-container {
+    margin-top: 20px;
+  }
 
   .home-contents {
     width: 90vw;
-    min-height: 90vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 50px;
+    padding: 0 5vw;
   }
 
   .home-contents .paragraph {
@@ -249,8 +253,6 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 5vw;
-
-    /* margin-top: 50px; */
   }
 
   .skiils-navbar img {
@@ -553,7 +555,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 70px;
   }
 
   .project-contents .image-sliding-container {
@@ -661,6 +663,12 @@
     border-radius: 30%;
     border: solid 2px var(--whiteColor);
   }
+
+  /* UPDATE HOMEPAGE WITH THE REST OF THE COMPONENTS */
+
+  .home-container .Contact-contents {
+    margin-top: 50px;
+  }
 }
 
 /* small screens and small height */
@@ -690,6 +698,17 @@
 
 /* Desktop */
 @media only screen and (min-width: 1200px) {
+  .home-contents {
+    width: 90vw;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+  }
+
   .Skills-container {
     width: 95vw;
     height: auto;
@@ -738,7 +757,7 @@
 
   .about-contents .let-connect {
     display: flex;
-    width: 50vw;
+    width: 60vw;
     justify-content: center;
     align-items: center;
     gap: 5vw;
@@ -762,4 +781,16 @@
   .languages .languages-spoken-list {
     width: 50vw;
   }
+}
+
+/* UPDATE HOMEPAGE WITH THE REST OF THE COMPONENTS */
+
+.home-container .project-contents {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
 }

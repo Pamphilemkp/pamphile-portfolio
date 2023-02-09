@@ -19,9 +19,10 @@ function Home() {
         Glad to see you here!
       </h1>
       <p className="paragraph">
-        I’m a full-stack software developer! I can help you build a product ,
+        I’m a full-stack software developer! I can help you build a product,
         feature or website Look through
-        some of my work and experience! If you like what you see and have a project you need coded,
+        some of my work and experience! If you like what you see and have
+        a project you need to be coded,
         don’t hestiate to contact me.
       </p>
       <Link to="/Contacts" className="get-in-touch">Get in Touch</Link>
