@@ -295,7 +295,7 @@
     display: flex;
     width: 80vw;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 30px;
   }
@@ -521,8 +521,9 @@
     padding: 10px 20px;
     border: solid 1px black;
     border-radius: 20px;
-    width: 50vw;
+    width: 80vw;
     font-size: 15px;
+    cursor: pointer;
   }
 
   /* Project Responsiveness */
@@ -668,6 +669,31 @@
 
   .home-container .Contact-contents {
     margin-top: 50px;
+  }
+
+  .home-container .skills-parts {
+    margin-bottom: 0;
+  }
+
+  .home-container .Skills-contents {
+    margin-top: 50px;
+  }
+
+  .home-container .Skills-contents .skiils-navbar {
+    height: auto;
+  }
+
+  .home-container .Skills-contents .skills-parts {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .home-container .Skills-contents .skiils-navbar .home-hide {
+    display: none;
+  }
+
+  .home-contents .get-in-touch {
+    width: 80vw;
   }
 }
 
