@@ -13,13 +13,14 @@ function SkillsList() {
           src="https://avatars.githubusercontent.com/u/98436409?v=4"
           aria-hidden
           alt="my online profile picture"
+          className="home-hide"
         />
-        <h2>
+        <h2 className="home-hide">
           Pamphile
           {' '}
           <span>MKP</span>
         </h2>
-        <p>Full-stack developer</p>
+        <p className="home-hide">Full-stack developer</p>
         <div className="skills-icon-container">
           <FaUser />
           <p>Pamphile MKP</p>

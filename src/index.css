@@ -65,8 +65,12 @@ body {
   gap: 30px;
 }
 
+.home-contents {
+  min-height: auto;
+}
+
 .home-contents .paragraph {
-  width: 40vw;
+  width: 60vw;
 }
 
 .home-contents .get-in-touch {
@@ -99,8 +103,7 @@ body {
 
 .about-contents .let-connect {
   display: flex;
-  width: 50vw;
-  justify-content: center;
+  width: 60vw;
   align-items: center;
   gap: 5vw;
 }
@@ -121,19 +124,19 @@ body {
 }
 
 .project-title p {
-  width: 50vw;
+  width: 60vw;
 }
 
 .about-contents .let-connect p {
-  width: 30vw;
+  width: 40vw;
 }
 
 .about-contents .languages {
   padding: 0;
   display: flex;
-  width: 50vw;
+  width: 60vw;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 30px;
 }
@@ -189,11 +192,11 @@ h3 {
 }
 
 .about-contents .paragrapgh {
-  width: 50vw;
+  width: 60vw;
 }
 
 .about-contents .connect {
-  width: 50vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   align-items: center;
