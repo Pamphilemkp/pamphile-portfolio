@@ -34,6 +34,7 @@ body {
   background-color: black;
   color: var(--whiteColor);
   font-size: 15px;
+  line-height: 25px;
 }
 
 .mkp-span {
@@ -71,6 +72,10 @@ body {
 
 .home-contents .paragraph {
   width: 60vw;
+}
+
+.home-contents .title {
+  line-height: normal;
 }
 
 .home-contents .get-in-touch {
@@ -434,6 +439,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100000;
 }
 
 .popup-contents {
@@ -495,4 +501,8 @@ textarea {
 
 .close-icon:hover {
   border-radius: 100%;
+}
+
+.code-skill-p {
+  padding: 10px;
 }
