@@ -136,21 +136,24 @@
 
 .nav-container .nav-desktop {
   display: flex;
+  width: 90vw;
   align-items: center;
   justify-content: center;
   gap: 50px;
   position: fixed;
-  top: 5%;
-  right: 35%;
-  background-color: rgba(0, 1, 2, 0.3);
+  top: 0;
+  padding: 40px 20px;
+  right: 5vw;
+  background-color: var(--blackColor);
+  z-index: 1000;
 }
 
 .nav-container .nav-desktop a:hover {
   color: var(--mainColor);
 }
 
-@media only screen and (max-width: 978px) {
-  /* Navbar mobile style */
+/* Navbar mobile style */
+@media only screen and (max-width: 999px) {
   .mobile-hamburger {
     display: block;
   }
@@ -277,8 +280,6 @@
   .about-contents .let-connect img {
     width: 80vw;
     height: 40vh;
-
-    /* margin-top: 150px; */
     border-radius: 10px;
   }
 
@@ -588,6 +589,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10000;
   }
 
   .popup-contents {
@@ -666,6 +668,9 @@
   }
 
   /* UPDATE HOMEPAGE WITH THE REST OF THE COMPONENTS */
+  .home-container .about-contents {
+    margin-top: 50px;
+  }
 
   .home-container .Contact-contents {
     margin-top: 50px;
@@ -698,7 +703,7 @@
 }
 
 /* small screens and small height */
-@media only screen and (max-width: 978px) and (max-height: 800px) {
+@media only screen and (max-width: 999px) and (max-height: 800px) {
   .skills-parts {
     margin-top: 100px;
   }
@@ -716,23 +721,45 @@
   }
 }
 
-@media only screen and  (width: 375px) and  (height: 667px) {
+@media only screen and (max-height: 690px) {
   .skills-parts {
-    margin-top: 80px;
+    margin-top: 20vh;
   }
 }
 
 /* TABLETS PARTS */
-@media only screen and (max-width: 1200px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
   .Contact-contents h2 {
     margin-top: 30px;
     align-self: center;
     width: 80vw;
   }
+
+  .skiils-navbar img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-contents .let-connect img {
+    width: 400px;
+    height: 300px;
+  }
+
+  .home-contents .get-in-touch,
+  .cv-button,
+  .submit {
+    width: 150px;
+    align-self: flex-start;
+    padding-left: 0;
+  }
+
+  .home-container .about-contents {
+    height: auto;
+  }
 }
 
-/* Desktop */
-@media only screen and (min-width: 1200px) {
+/* DESKTOP */
+@media only screen and (min-width: 1000px) {
   .home-contents {
     width: 90vw;
     min-height: 60vh;
@@ -757,6 +784,10 @@
     margin-top: 100px;
     z-index: 10;
     overflow-y: visible;
+  }
+
+  .project-contents .project-title {
+    margin-top: 30px;
   }
 
   .Skills-contents {
@@ -837,15 +868,20 @@
   }
 }
 
-/* UPDATE HOMEPAGE WITH THE REST OF THE COMPONENTS */
+/* SMALL SCREENS DESKTOP */
 
-/*
-.home-container .project-contents {
-  width: 90vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-bottom: 50px;
-} */
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .home-contents .get-in-touch {
+    width: 150px;
+    align-self: center;
+    padding-left: 0;
+  }
+
+  .Contact-contents h2 {
+    width: auto;
+  }
+
+  .about-contents .let-connect img {
+    width: auto;
+  }
+}

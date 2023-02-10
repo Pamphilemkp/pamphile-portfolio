@@ -46,54 +46,54 @@ function SkillsList() {
             <li>
               {' '}
               <div className="code-skill">
-                <p>
+                <p className="code-skill-p">
                   HTML5 -
                   {' '}
                   <span>CSS3</span>
                 </p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" width="100%" height="9px" labelSize="9px" />
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" width="100%" height="15px" labelSize="15px" />
               </div>
             </li>
             <li>
               <div className="code-skill">
-                <p>JavaScript</p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">JavaScript</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
             </li>
             <li>
               <div className="code-skill">
-                <p>JQuery</p>
-                <ProgressBar completed={70} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">JQuery</p>
+                <ProgressBar completed={70} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
             </li>
             <li>
               <div className="code-skill">
-                <p>React - Redux</p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">React - Redux</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
             </li>
           </ul>
         </div>
         <div className="programming-skills">
-          <h3>Backend</h3>
+          <h3 className="code-skill-p">Backend</h3>
           <ul className="backend-list">
             <li>
               <div className="code-skill">
-                <p>Ruby</p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">Ruby</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
 
             </li>
             <li>
               <div className="code-skill">
-                <p>Rails</p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">Rails</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
             </li>
             <li>
               <div className="code-skill">
-                <p>MySQL</p>
-                <ProgressBar completed={85} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">MySQL</p>
+                <ProgressBar completed={85} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
             </li>
           </ul>
@@ -104,8 +104,8 @@ function SkillsList() {
           <ul className="backend-list">
             <li>
               <div className="code-skill">
-                <p>Project Management</p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">Project Management</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
 
             </li>
@@ -117,14 +117,14 @@ function SkillsList() {
           <ul className="tool-methos">
             <li>
               <div className="code-skill">
-                <p>Jest, Mocha, Capybara</p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">Jest, Mocha, Capybara</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
             </li>
             <li>
               <div className="code-skill">
-                <p>Git-Github</p>
-                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="9px" labelSize="9px" />
+                <p className="code-skill-p">Git-Github</p>
+                <ProgressBar completed={90} maxCompleted={100} bgColor="rgb(65, 105, 225)" height="15px" labelSize="15px" />
               </div>
             </li>
           </ul>
