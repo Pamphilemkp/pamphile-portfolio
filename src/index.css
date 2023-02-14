@@ -31,7 +31,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(29, 39, 56);
   color: var(--whiteColor);
   font-size: 15px;
   line-height: 25px;
@@ -505,4 +505,14 @@ textarea {
 
 .code-skill-p {
   padding: 10px;
+}
+
+/*  App background */
+.app-global-bg {
+  position: fixed;
+  top: 50%;
+  width: 100vw;
+  /* bottom: 0; */
+  left: 0;
+  right: 0;
 }
