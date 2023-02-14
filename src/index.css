@@ -3,7 +3,7 @@
 
 :root {
   --mainColor: rgb(65, 105, 225);
-  --whiteColor: #fff;
+  --whiteColor: #7d6060;
   --blackColor: #000;
   --transparentColor: rgba(96, 94, 94, 0.3);
 }
@@ -512,7 +512,6 @@ textarea {
   position: fixed;
   top: 50%;
   width: 100vw;
-  /* bottom: 0; */
   left: 0;
   right: 0;
 }
