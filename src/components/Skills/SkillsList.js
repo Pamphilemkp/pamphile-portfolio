@@ -37,7 +37,7 @@ function SkillsList() {
           <FaEnvelope />
           <a href="https://wa.me/+905338829657?text=Hello">pamphilemkp@gmail.com</a>
         </div>
-        <a href="../assets/mycv.pdf" className="cv-button" download>Dowload CV</a>
+        <a href="../assets/resume.pdf" className="cv-button" download>Dowload CV</a>
       </div>
       <div className="skills-parts">
         <div className="frontend">
