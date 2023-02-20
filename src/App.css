@@ -144,7 +144,7 @@
   top: 0;
   padding: 40px 20px;
   right: 5vw;
-  background-color: var(--blackColor);
+  background-color: rgb(29, 39, 56);
   z-index: 1000;
 }
 

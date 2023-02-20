@@ -1,0 +1,13 @@
+{
+    "home": {
+      "great": "Salut",
+      "great-emoji": "👋",
+      "name": {
+          "first": "Je m'appele Pamphile ",
+          "last": "MKP",
+          "statement": "Bienvenu sur mon portfolio!"
+        },
+        "description": "Je suis un développeur de logiciels à part entière ! Je peux vous aider à construire un produit, une fonctionnalité, ou un site web ; regardez à travers certains de mes travaux et mon expérience ! Si vous aimez ce que vous voyez et avez un projet que vous avez besoin d'être codé, n'hésitez pas à me contacter.",
+        "in-touch-button": "Me contacter"
+      }
+  }

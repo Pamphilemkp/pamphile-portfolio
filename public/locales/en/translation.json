@@ -1,0 +1,13 @@
+{
+  "home": {
+    "great": "Hi",
+    "great-emoji": "👋",
+    "name": {
+        "first": "I’m Pamphile ",
+        "last": "MKP",
+        "statement": "Glad to see you here!"
+      },
+      "description": "I’m a full-stack software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need to be coded, don’t hestiate to contact me.",
+      "in-touch-button": "Get in Touch"
+    }
+}

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import NavMobile from './NavMobile';
+import LanguageSwitcher from './LanguageSwitcher';
 
 function NavBar() {
   const activeStyle = {
@@ -15,6 +16,7 @@ function NavBar() {
   return (
     <div className="nav-container">
       <div className="mobile-hamburger hamburger-navbar">
+        <LanguageSwitcher />
         <Hamburger
           onToggle={(toggled) => {
             if (toggled) {
@@ -28,6 +30,7 @@ function NavBar() {
         <NavMobile open={isOpen} />
       </div>
       <div className="nav-desktop">
+        <LanguageSwitcher />
         <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Home</NavLink>
         <NavLink to="/About" style={({ isActive }) => (isActive ? activeStyle : undefined)}>About</NavLink>
         <NavLink to="/Skills" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Skills</NavLink>

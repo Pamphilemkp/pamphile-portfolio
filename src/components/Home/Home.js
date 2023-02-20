@@ -1,31 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="home-contents">
       <p className="first-paragrapgh">
-        Hi
+        {t('home.great')}
         {' '}
-        <span>👋</span>
+        <span>{t('home.great-emoji')}</span>
       </p>
       <h1 className="title">
-        I’m Pamphile
+        {t('home.name.first')}
         {' '}
-        <span className="mkp-span"> MKP</span>
+        <span className="mkp-span">
+          {' '}
+          {t('home.name.last')}
+        </span>
         {' '}
         <br />
-        Glad to see you here!
+        {t('home.name.statement')}
       </h1>
       <p className="paragraph">
-        I’m a full-stack software developer! I can help you build a product,
-        feature or website Look through
-        some of my work and experience! If you like what you see and have
-        a project you need to be coded,
-        don’t hestiate to contact me.
+        {t('home.description')}
       </p>
-      <Link to="/Contacts" className="get-in-touch">Get in Touch</Link>
+      <Link to="/Contacts" className="get-in-touch">{t('home.in-touch-button')}</Link>
     </div>
   );
 }
