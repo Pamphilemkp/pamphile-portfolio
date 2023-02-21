@@ -13,7 +13,7 @@ i18next
 
     lng: 'en',
 
-    supportedLngs: ['en', 'fr'],
+    supportedLngs: ['en', 'fr', 'tr'],
 
     // Allows "en-US" and "en-UK" to be implcitly supported when "en"
 

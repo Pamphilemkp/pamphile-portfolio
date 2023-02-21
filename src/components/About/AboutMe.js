@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   FaGithub, FaTwitter, FaLinkedin, FaMedium, FaAngellist, FaWhatsapp,
 } from 'react-icons/fa';
@@ -7,6 +8,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 function AboutMe() {
+  const { t } = useTranslation();
   return (
     <div className="about-contents">
       <div className="let-connect">
@@ -16,51 +18,43 @@ function AboutMe() {
           alt="my online profile picture"
         />
         <p>
-          My name is Pamphile Musonda, i am a full-stack web developer,
-          i play chess in my spare time, like working out and reading books.
-          in love with boxing that i started since i was 14.
-          and I'm very passionate and dedicated to my work.
-          finally i like travelling as a hobby and seekeng for
-          new interesting opportuities.
+          {t('about.description')}
         </p>
       </div>
       <div className="languages">
-        <h2>Spoken languages</h2>
+        <h2>{t('about.spoken-languages-title')}</h2>
         <u className="languages-spoken-list">
           <li>
             <div style={{ width: 100, height: 100 }}>
               <CircularProgressbar value={90} text={`${90}%`} />
             </div>
-            <span>English</span>
+            <span>{t('about.spoken-languages-list.en')}</span>
           </li>
           <li>
             <div style={{ width: 100, height: 100 }}>
               <CircularProgressbar value={95} text={`${95}%`} />
             </div>
-            <span>French</span>
+            <span>{t('about.spoken-languages-list.fr')}</span>
           </li>
           <li>
             <div style={{ width: 100, height: 100 }}>
               <CircularProgressbar value={30} text={`${30}%`} />
             </div>
-            <span>Turkish</span>
+            <span>{t('about.spoken-languages-list.tr')}</span>
           </li>
           <li>
             <div style={{ width: 100, height: 100 }}>
               <CircularProgressbar value={85} text={`${85}%`} />
             </div>
-            <span>Swahili</span>
+            <span>{t('about.spoken-languages-list.swa')}</span>
           </li>
         </u>
       </div>
       <p className="paragrapgh">
-        Want to reach out to me? My inbox is always open.
-        I'm currently working on an exciting project which I will be announcing soon.If you have a
-        question or just want to say hello I'll try my best to get
-        back to you! asdfadsfadsfa
+        {t('about.last-description')}
       </p>
       <div className="connect">
-        <h2 className="connect-title">Let's connect</h2>
+        <h2 className="connect-title">{t('about.Let-connect')}</h2>
         <ul className="media-icons">
           <li>
             <a href="https://twitter.com/PamphileMusonda">

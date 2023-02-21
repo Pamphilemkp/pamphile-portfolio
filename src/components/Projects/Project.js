@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
@@ -8,8 +9,10 @@ import ProjectStore from './ProjectStore';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Modal from './Modal';
+import { useTranslation } from 'react-i18next';
 
 function Project() {
+  const { t } = useTranslation();
   const sliderSettings = {
     arrows: false,
     autoplay: true,
@@ -46,14 +49,9 @@ function Project() {
   return (
     <div className="project-contents">
       <div className="project-title">
-        <h1>Projects</h1>
+        <h1>{t('projects.title')}</h1>
         <p>
-          Here are a few of my projects some are deployed hence
-          you can see the live version and the source but others are still under deployment
-          only the source of the project is visible but all the projects will be
-          soon deployed for you to see the live demo.
-          {' '}
-
+          {t('projects.description')}
         </p>
       </div>
       <Slider {...sliderSettings}>

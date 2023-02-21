@@ -10,8 +10,8 @@
         "description": "Je suis un développeur de logiciels à part entière ! Je peux vous aider à construire un produit, une fonctionnalité, ou un site web ; regardez à travers certains de mes travaux et mon expérience ! Si vous aimez ce que vous voyez et avez un projet que vous avez besoin d'être codé, n'hésitez pas à me contacter.",
         "in-touch-button": "Me contacter"
       },
-      "projetc": {
-        "title": "Projets",
+      "projects": {
+        "title": "Projects",
         "description": "Voici quelques-uns de mes projets : certains sont déployés et vous pouvez donc voir la version live et la source, mais d'autres sont encore en cours de déploiement ; seule la source du projet est visible, mais tous les projets seront bientôt déployés pour que vous puissiez voir la démo live."
       },
       "about": {
