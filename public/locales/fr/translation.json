@@ -9,5 +9,32 @@
         },
         "description": "Je suis un développeur de logiciels à part entière ! Je peux vous aider à construire un produit, une fonctionnalité, ou un site web ; regardez à travers certains de mes travaux et mon expérience ! Si vous aimez ce que vous voyez et avez un projet que vous avez besoin d'être codé, n'hésitez pas à me contacter.",
         "in-touch-button": "Me contacter"
+      },
+      "projetc": {
+        "title": "Projets",
+        "description": "Voici quelques-uns de mes projets : certains sont déployés et vous pouvez donc voir la version live et la source, mais d'autres sont encore en cours de déploiement ; seule la source du projet est visible, mais tous les projets seront bientôt déployés pour que vous puissiez voir la démo live."
+      },
+      "about": {
+        "description": "Je m'appelle Pamphile Musonda, je suis un développeur web full-stack, je joue aux échecs pendant mon temps libre, j'aime faire de la musculation et lire des livres. Amoureux de la boxe que j'ai commencé à pratiquer depuis l'âge de 14 ans, je suis très passionné et dévoué à mon travail. Enfin, j'aime voyager comme passe-temps et rechercher de nouvelles opportunités intéressantes.",
+        "spoken-languages-title": "Langues parlée",
+        "spoken-languages-list": {
+          "en": "Anglais",
+          "fr": "Francais",
+          "swa": "Swahili",
+          "tr": "Turc"
+        },
+        "last-description": "Vous voulez me contacter ? Ma boîte de réception est toujours ouverte. Je travaille actuellement sur un projet passionnant que j'annoncerai bientôt. Si vous avez une question ou si vous voulez simplement me saluer, je ferai de mon mieux pour vous répondre ! ",
+        "Let-connect": "Connectons-nous"
+      },
+      "contact": {
+        "title": "Contactons ",
+        "title0": "nous",
+        "address": "Chypre du Nord, Yenikent avenue, Gonyeli - Nicosia",
+        "contact-details": {
+          "name": "Entrez Votre Nom complet",
+          "email": "Entrez Votre Email",
+          "message": "Entrez Votre Message",
+          "submit": "Envoyer message"
+        }
       }
   }

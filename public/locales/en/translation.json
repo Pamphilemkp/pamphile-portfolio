@@ -9,5 +9,32 @@
       },
       "description": "I’m a full-stack software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need to be coded, don’t hestiate to contact me.",
       "in-touch-button": "Get in Touch"
+    },
+    "projetc": {
+      "title": "Projects",
+      "description": "Here are a few of my projects some are deployed hence you can see the live version and the source but others are still under deployment only the source of the project is visible but all the projects will be soon deployed for you to see the live demo."
+    },
+    "about": {
+      "description": "My name is Pamphile Musonda, i am a full-stack web developer, i play chess in my spare time, like working out and reading books. in love with boxing that i started since i was 14. and I'm very passionate and dedicated to my work. finally i like travelling as a hobby and seekeng for new interesting opportuities.",
+      "spoken-languages-title": "Spoken languages",
+      "spoken-languages-list": {
+        "en": "English",
+        "fr": "French",
+        "swa": "Swahili",
+        "tr": "Turkish"
+      },
+      "last-description": "Want to reach out to me? My inbox is always open. I'm currently working on an exciting project which I will be announcing soon.If you have a question or just want to say hello I'll try my best to get back to you! ",
+      "Let-connect": "Let's connect"
+    },
+    "contact": {
+      "title": "Get in",
+      "title0": "Touch",
+      "address": "Yenikent street, Nicosia, North Cyprus",
+      "contact-details": {
+        "name": "Enter Full-name",
+        "email": "Entrer Email",
+        "message": "Entrez Message",
+        "submit": "Submit message"
+      }
     }
 }

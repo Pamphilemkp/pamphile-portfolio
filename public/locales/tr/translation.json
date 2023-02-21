@@ -1,0 +1,40 @@
+{
+    "home": {
+      "great": "Selam",
+      "great-emoji": "👋",
+      "name": {
+          "first": "Adim Pamphile",
+          "last": "MKP",
+          "statement": "Sizi burada gördüğüme sevindim!"
+        },
+        "description": "Ben bir full-stack yazılım geliştiricisiyim! Bir ürün, özellik veya web sitesi oluşturmanıza yardımcı olabilirim Çalışmalarımdan ve deneyimlerimden bazılarına göz atın! Gördükleriniz hoşunuza giderse ve kodlanması gereken bir projeniz varsa, benimle iletişime geçmekten çekinmeyin.",
+        "in-touch-button": "İletişime Geçin"
+      },
+      "projetc": {
+        "title": "Projeler",
+        "description": "İşte projelerimden bazıları konuşlandırıldı, bu nedenle canlı sürümü ve kaynağı görebilirsiniz, ancak diğerleri hala dağıtım aşamasında sadece projenin kaynağı görülebilir, ancak canlı demoyu görmeniz için tüm projeler yakında konuşlandırılacaktır."
+      },
+      "about": {
+        "description": "Adım Pamphile Musonda, tam yığın web geliştiricisiyim, boş zamanlarımda satranç oynuyorum, egzersiz yapmayı ve kitap okumayı seviyorum. 14 yaşımdan beri başladığım boksa aşığım. ve işime çok tutkulu ve adanmışım. son olarak hobi olarak seyahat etmeyi ve yeni ilginç fırsatlar aramayı seviyorum.",
+        "spoken-languages-title": "Konuşulan diller",
+        "spoken-languages-list": {
+          "en": "İngilizce",
+          "fr": "Fransızca",
+          "swa": "Swahili",
+          "tr": "Türkçe"
+        },
+        "last-description": "Bana ulaşmak ister misiniz? Gelen kutum her zaman açık. Şu anda yakında duyuracağım heyecan verici bir proje üzerinde çalışıyorum. Bir sorunuz varsa veya sadece merhaba demek istiyorsanız, size geri dönmek için elimden geleni yapacağım!",
+        "Let-connect": "Hadi bağlanalım"
+      },
+      "contact": {
+        "title": "İletişime",
+        "title0": "geçin",
+        "address": "Yenikent sokak, Lefkoşa, Kuzey Kıbrıs",
+        "contact-details": {
+          "name": "Tam Adınızı Girin",
+          "email": "E-posta Girin",
+          "message": "Girişim Mesajı",
+          "submit": "Mesaj gönder"
+        }
+      }
+  }
