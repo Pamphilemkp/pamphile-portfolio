@@ -36,5 +36,12 @@
         "message": "Entrez Message",
         "submit": "Submit message"
       }
+    },
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
     }
 }

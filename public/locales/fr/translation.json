@@ -36,5 +36,12 @@
           "message": "Entrez Votre Message",
           "submit": "Envoyer message"
         }
+      },
+      "navbar": {
+        "home": "Accueil",
+        "about": "À propos",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "contact": "Contact"
       }
   }

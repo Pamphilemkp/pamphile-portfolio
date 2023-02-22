@@ -1,6 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaFlag } from 'react-icons/fa';
+import { CountryFlag } from 'react-country-flag';
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -12,10 +13,16 @@ function LanguageSwitcher() {
       >
         <option value="en">
           English
-          <FaFlag style={{ color: 'red', backgroundColor: 'white' }} />
+          <CountryFlag countryCode="US" />
         </option>
-        <option value="fr">Francais</option>
-        <option value="tr">Türkçe</option>
+        <option value="fr">
+          Francais
+          <CountryFlag countryCode="FR" />
+        </option>
+        <option value="tr">
+          Türkçe
+          <CountryFlag countryCode="TR" />
+        </option>
       </select>
     </div>
   );

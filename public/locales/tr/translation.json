@@ -36,5 +36,12 @@
           "message": "Girişim Mesajı",
           "submit": "Mesaj gönder"
         }
+      },
+      "navbar": {
+        "home": "Ev",
+        "about": "Hakkında",
+        "skills": "Beceriler",
+        "projects": "Projeler",
+        "contact": "İletişim"
       }
   }
