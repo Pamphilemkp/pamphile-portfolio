@@ -3,9 +3,14 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
+import { useTranslation } from 'react-i18next';
+import { FaCoffee } from 'react-icons/fa';
 import NavMobile from './NavMobile';
+import LanguageSwitcher from './LanguageSwitcher';
 
 function NavBar() {
+  const { t } = useTranslation();
+
   const activeStyle = {
     color: 'rgb(65, 105, 225)',
   };
@@ -28,11 +33,16 @@ function NavBar() {
         <NavMobile open={isOpen} />
       </div>
       <div className="nav-desktop">
-        <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Home</NavLink>
-        <NavLink to="/About" style={({ isActive }) => (isActive ? activeStyle : undefined)}>About</NavLink>
-        <NavLink to="/Skills" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Skills</NavLink>
-        <NavLink to="/Projects" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Projects</NavLink>
-        <NavLink to="/Contacts" style={({ isActive }) => (isActive ? activeStyle : undefined)}>Contact</NavLink>
+        <LanguageSwitcher />
+        <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.home')}</NavLink>
+        <NavLink to="/About" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.about')}</NavLink>
+        <NavLink to="/Skills" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.skills')}</NavLink>
+        <NavLink to="/Projects" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.projects')}</NavLink>
+        <NavLink to="/Contacts" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.contact')}</NavLink>
+        <a href="https://www.buymeacoffee.com/pamphilemkp" className="buy-me-coffe">
+          <FaCoffee className="coffee-icon" />
+          <span>{t('coffee')}</span>
+        </a>
       </div>
     </div>
   );
