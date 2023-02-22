@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { useTranslation } from 'react-i18next';
+import { FaCoffee } from 'react-icons/fa';
 import NavMobile from './NavMobile';
 import LanguageSwitcher from './LanguageSwitcher';
 
@@ -19,7 +20,6 @@ function NavBar() {
   return (
     <div className="nav-container">
       <div className="mobile-hamburger hamburger-navbar">
-        <LanguageSwitcher />
         <Hamburger
           onToggle={(toggled) => {
             if (toggled) {
@@ -39,6 +39,10 @@ function NavBar() {
         <NavLink to="/Skills" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.skills')}</NavLink>
         <NavLink to="/Projects" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.projects')}</NavLink>
         <NavLink to="/Contacts" style={({ isActive }) => (isActive ? activeStyle : undefined)}>{t('navbar.contact')}</NavLink>
+        <a href="https://www.buymeacoffee.com/pamphilemkp" className="buy-me-coffe">
+          <FaCoffee className="coffee-icon" />
+          <span>{t('coffee')}</span>
+        </a>
       </div>
     </div>
   );

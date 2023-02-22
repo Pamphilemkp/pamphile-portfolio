@@ -160,10 +160,9 @@
 
   .hamburger-navbar {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 90vw;
+    align-items: center;
+    width: 80vw;
   }
 
   .nav-container .nav-desktop {

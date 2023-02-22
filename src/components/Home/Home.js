@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-// const { t } = useTranslation();
 
 function Home() {
   const { t } = useTranslation();

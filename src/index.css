@@ -506,3 +506,47 @@ textarea {
 .code-skill-p {
   padding: 10px;
 }
+
+/* Languages switcher style */
+
+.select select {
+  background-color: rgb(29, 39, 56);
+  color: var(--whiteColor);
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.select select option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: auto;
+}
+
+.flag-name {
+  margin-left: 10px;
+}
+
+/* Buy me a coffe */
+
+.buy-me-coffe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: solid 1px var(--whiteColor);
+  border-radius: 10px;
+  padding: 1px 10px;
+  margin: 5px 0;
+  background: #c1a84a;
+}
+
+.coffee-icon {
+  color: yellow;
+}
+
+.coffee-text {
+  font-size: 13px;
+}

@@ -5,8 +5,9 @@ import { RiHomeHeartLine } from 'react-icons/ri';
 import { CgProfile } from 'react-icons/cg';
 import { GiSkills } from 'react-icons/gi';
 import { MdComputer } from 'react-icons/md';
-import { FaUserGraduate } from 'react-icons/fa';
+import { FaUserGraduate, FaCoffee } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 function NavMobile({ open }) {
   const { t } = useTranslation();
@@ -14,9 +15,13 @@ function NavMobile({ open }) {
   const activeStyle = {
     color: 'rgb(65, 105, 225)',
   };
-  if (!open) return null;
+  if (!open) return <LanguageSwitcher />;
   return (
     <div className="taggle-menu">
+      <a href="https://www.buymeacoffee.com/pamphilemkp" className="buy-me-coffe">
+        <FaCoffee className="coffee-icon" />
+        <span className="coffee-text">{t('coffee')}</span>
+      </a>
       <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)}>
         <span><RiHomeHeartLine /></span>
         <span>{t('navbar.home')}</span>
@@ -41,7 +46,6 @@ function NavMobile({ open }) {
           <span><CgProfile /></span>
         </span>
         <span>{t('navbar.contact')}</span>
-
       </NavLink>
     </div>
   );
