@@ -6,8 +6,11 @@ import {
 import ProgressBar from '@ramonak/react-progress-bar';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 
 function SkillsList() {
+  const { t } = useTranslation();
+
   const { ref, inView } = useInView({
     threshold: 0.2, // The element is considered "in view" when 20% of it is visible
     triggerOnce: true, // The animation should only trigger once
@@ -66,7 +69,7 @@ function SkillsList() {
           <FaEnvelope />
           <a href="https://wa.me/+905338829657?text=Hello">pamphilemkp@gmail.com</a>
         </div>
-        <a href="../assets/cv.pdf" className="cv-button" download>Dowload CV</a>
+        <a href="../assets/cv.pdf" className="cv-button" download>{t('skills.download-cv')}</a>
       </div>
       <div className="skills-parts">
         <div className="frontend">

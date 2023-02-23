@@ -44,5 +44,8 @@
         "projects": "Projeler",
         "contact": "İletişim"
       },
-      "coffee": "Bana bir kahve ısmarla."
+      "coffee": "Bana bir kahve ısmarla.",
+      "skills": {
+        "download-cv": "CV indir"
+      }
   }
