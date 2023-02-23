@@ -34,7 +34,7 @@ function Home() {
       ref={ref}
       variants={contentsVariants}
       initial="initial"
-      animate={inView ? "animate" : "initial"}
+      animate={inView ? 'animate' : 'initial'}
     >
       <p className="first-paragrapgh">
         {t('home.great')}
@@ -61,4 +61,3 @@ function Home() {
 }
 
 export default Home;
-
