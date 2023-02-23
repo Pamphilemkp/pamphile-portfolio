@@ -211,6 +211,7 @@
   /* Home page responsiveness */
   .home-container {
     margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   .home-contents {
@@ -518,7 +519,7 @@
     align-self: flex-start;
     background-color: var(--mainColor);
     color: var(--whiteColor);
-    padding: 10px 20px;
+    padding: 20px;
     border: solid 1px black;
     border-radius: 20px;
     width: 80vw;
