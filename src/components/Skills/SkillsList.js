@@ -4,10 +4,39 @@ import {
   FaUser, FaPhone, FaEnvelope, FaLocationArrow,
 } from 'react-icons/fa';
 import ProgressBar from '@ramonak/react-progress-bar';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function SkillsList() {
+  const { ref, inView } = useInView({
+    threshold: 0.2, // The element is considered "in view" when 20% of it is visible
+    triggerOnce: true, // The animation should only trigger once
+  });
+
+  const contentsVariants = {
+    initial: {
+      opacity: 0,
+      translateX: -50,
+      translateY: -50,
+    },
+    animate: {
+      opacity: 1,
+      translateX: 0,
+      translateY: 0,
+      transition: {
+        duration: 0.8,
+        delay: 0.5,
+      },
+    },
+  };
   return (
-    <div className="Skills-contents">
+    <motion.div
+      className="Skills-contents"
+      ref={ref}
+      variants={contentsVariants}
+      initial="initial"
+      animate={inView ? 'animate' : 'initial'}
+    >
       <div className="skiils-navbar">
         <img
           src="https://avatars.githubusercontent.com/u/98436409?v=4"
@@ -139,7 +168,7 @@ function SkillsList() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

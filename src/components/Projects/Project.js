@@ -10,9 +10,34 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Modal from './Modal';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Project() {
   const { t } = useTranslation();
+
+  const { ref, inView } = useInView({
+    threshold: 0.2, // The element is considered "in view" when 20% of it is visible
+    triggerOnce: true, // The animation should only trigger once
+  });
+
+  const contentsVariants = {
+    initial: {
+      opacity: 0,
+      translateX: -50,
+      translateY: -50,
+    },
+    animate: {
+      opacity: 1,
+      translateX: 0,
+      translateY: 0,
+      transition: {
+        duration: 0.8,
+        delay: 0.5,
+      },
+    },
+  };
+
   const sliderSettings = {
     arrows: false,
     autoplay: true,
@@ -47,7 +72,13 @@ function Project() {
   const [itemId, setId] = useState(null);
 
   return (
-    <div className="project-contents">
+    <motion.div
+      className="about-contents"
+      ref={ref}
+      variants={contentsVariants}
+      initial="initial"
+      animate={inView ? 'animate' : 'initial'}
+    >
       <div className="project-title">
         <h1>{t('projects.title')}</h1>
         <p>
@@ -61,14 +92,13 @@ function Project() {
             <h2>{title}</h2>
           </div>
         ))}
-        {/* <ul>{dots}</ul> */}
       </Slider>
       <Modal
         open={isOpen}
         close={() => setOpen(false)}
         id={itemId}
       />
-    </div>
+    </motion.div>
   );
 }
 export default Project;
