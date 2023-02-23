@@ -6,23 +6,46 @@ import {
 } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 function Contact() {
   const { t } = useTranslation();
+
+  const { ref, inView } = useInView({
+    threshold: 0.2, // The element is considered "in view" when 20% of it is visible
+    triggerOnce: true, // The animation should only trigger once
+  });
+
+  const contentsVariants = {
+    initial: {
+      opacity: 0,
+      translateX: -50,
+      translateY: -50,
+    },
+    animate: {
+      opacity: 1,
+      translateX: 0,
+      translateY: 0,
+      transition: {
+        duration: 0.8,
+        delay: 0.5,
+      },
+    },
+  };
+
   const [state, handleSubmit] = useForm('xwkjvwje');
+
   if (state.succeeded) {
     return <p>Thanks for reaching out to me, i try will get back to you ASAP!</p>;
   }
+  
   return (
     <motion.div
       className="Contact-contents"
-      initial={{
-        opacity: 0,
-        translateX: -50,
-        translateY: -50,
-      }}
-      animate={{ opacity: 1, translateX: 0, translateY: 0 }}
-      transition={{ duration: 0.5, delay: 1 }}
+      ref={ref}
+      variants={contentsVariants}
+      initial="initial"
+      animate={inView ? "animate" : "initial"}
     >
       <h2>
         {t('contact.title')}

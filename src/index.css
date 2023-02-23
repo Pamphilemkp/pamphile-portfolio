@@ -72,6 +72,7 @@ body {
 
 .home-contents .paragraph {
   width: 60vw;
+  font-family: 'Poppins', serif;
 }
 
 .home-contents .title {
@@ -130,10 +131,12 @@ body {
 
 .project-title p {
   width: 60vw;
+  font-family: 'Poppins', serif;
 }
 
 .about-contents .let-connect p {
   width: 40vw;
+  font-family: 'Poppins', serif;
 }
 
 .about-contents .languages {
@@ -198,6 +201,7 @@ h3 {
 
 .about-contents .paragrapgh {
   width: 60vw;
+  font-family: 'Poppins', serif;
 }
 
 .about-contents .connect {
@@ -264,7 +268,8 @@ h3 {
 }
 
 .medium {
-  color: rgb(47, 46, 46);
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
 }
 
 .linkedin {
@@ -272,7 +277,8 @@ h3 {
 }
 
 .github {
-  color: rgb(84, 85, 88);
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
 }
 
 .angelist {
@@ -550,3 +556,11 @@ textarea {
 .coffee-text {
   font-size: 13px;
 }
+/* 
+font-family: ui-sans-serif,system-ui,
+-apple-system,BlinkMacSystemFont,
+Segoe UI,Roboto,Helvetica Neue,
+Arial,Noto Sans,sans-serif,
+Apple Color Emoji,Segoe UI Emoji,
+Segoe UI Symbol,Noto Color Emoji;
+ */
