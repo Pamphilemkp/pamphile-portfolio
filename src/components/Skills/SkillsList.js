@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function SkillsList() {
-
   const { ref, inView } = useInView({
     threshold: 0.2, // The element is considered "in view" when 20% of it is visible
     triggerOnce: true, // The animation should only trigger once
@@ -36,7 +35,7 @@ function SkillsList() {
       ref={ref}
       variants={contentsVariants}
       initial="initial"
-      animate={inView ? "animate" : "initial"}
+      animate={inView ? 'animate' : 'initial'}
     >
       <div className="skiils-navbar">
         <img

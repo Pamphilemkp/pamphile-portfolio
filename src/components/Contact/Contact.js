@@ -38,14 +38,14 @@ function Contact() {
   if (state.succeeded) {
     return <p>Thanks for reaching out to me, i try will get back to you ASAP!</p>;
   }
-  
+
   return (
     <motion.div
       className="Contact-contents"
       ref={ref}
       variants={contentsVariants}
       initial="initial"
-      animate={inView ? "animate" : "initial"}
+      animate={inView ? 'animate' : 'initial'}
     >
       <h2>
         {t('contact.title')}
