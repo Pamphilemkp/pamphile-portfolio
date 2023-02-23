@@ -4,10 +4,20 @@ import {
   FaUser, FaPhone, FaEnvelope, FaLocationArrow,
 } from 'react-icons/fa';
 import ProgressBar from '@ramonak/react-progress-bar';
+import { motion } from 'framer-motion';
 
 function SkillsList() {
   return (
-    <div className="Skills-contents">
+    <motion.div
+      className="Skills-contents"
+      initial={{
+        opacity: 0,
+        translateX: -50,
+        translateY: -50,
+      }}
+      animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+    >
       <div className="skiils-navbar">
         <img
           src="https://avatars.githubusercontent.com/u/98436409?v=4"
@@ -139,7 +149,7 @@ function SkillsList() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -10,6 +10,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Modal from './Modal';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function Project() {
   const { t } = useTranslation();
@@ -47,7 +48,16 @@ function Project() {
   const [itemId, setId] = useState(null);
 
   return (
-    <div className="project-contents">
+    <motion.div
+      className="project-contents"
+      initial={{
+        opacity: 0,
+        translateX: -50,
+        translateY: -50,
+      }}
+      animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+    >
       <div className="project-title">
         <h1>{t('projects.title')}</h1>
         <p>
@@ -61,14 +71,13 @@ function Project() {
             <h2>{title}</h2>
           </div>
         ))}
-        {/* <ul>{dots}</ul> */}
       </Slider>
       <Modal
         open={isOpen}
         close={() => setOpen(false)}
         id={itemId}
       />
-    </div>
+    </motion.div>
   );
 }
 export default Project;

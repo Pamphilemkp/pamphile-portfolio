@@ -6,11 +6,21 @@ import {
 } from 'react-icons/fa';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { motion } from 'framer-motion';
 
 function AboutMe() {
   const { t } = useTranslation();
   return (
-    <div className="about-contents">
+    <motion.div
+      className="about-contents"
+      initial={{
+        opacity: 0,
+        translateX: -50,
+        translateY: -50,
+      }}
+      animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+    >
       <div className="let-connect">
         <img
           src="https://avatars.githubusercontent.com/u/98436409?v=4"
@@ -92,7 +102,7 @@ function AboutMe() {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

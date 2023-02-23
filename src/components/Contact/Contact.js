@@ -5,6 +5,7 @@ import {
   FaMapMarkedAlt, FaWhatsapp, FaEnvelope, FaLinkedin,
 } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function Contact() {
   const { t } = useTranslation();
@@ -13,7 +14,16 @@ function Contact() {
     return <p>Thanks for reaching out to me, i try will get back to you ASAP!</p>;
   }
   return (
-    <div className="Contact-contents">
+    <motion.div
+      className="Contact-contents"
+      initial={{
+        opacity: 0,
+        translateX: -50,
+        translateY: -50,
+      }}
+      animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+      transition={{ duration: 0.5, delay: 1 }}
+    >
       <h2>
         {t('contact.title')}
         <span className="span-touch">{t('contact.title0')}</span>
@@ -58,7 +68,7 @@ function Contact() {
           <input type="submit" value={t('contact.contact-details.submit')} className="submit" disabled={state.submitting} />
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
