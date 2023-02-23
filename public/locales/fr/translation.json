@@ -27,7 +27,7 @@
         "Let-connect": "Connectons-nous"
       },
       "contact": {
-        "title": "Contactons ",
+        "title": "Contactons-",
         "title0": "nous",
         "address": "Chypre du Nord, Yenikent avenue, Gonyeli - Nicosia",
         "contact-details": {
@@ -44,5 +44,8 @@
         "projects": "Projets",
         "contact": "Contact"
       },
-      "coffee": "Offre-moi un café"
+      "coffee": "Offre-moi un café",
+      "skills": {
+        "download-cv": "Télécharger mon cv"
+      }
   }

@@ -44,5 +44,8 @@
       "projects": "Projects",
       "contact": "Contact"
     },
-    "coffee": "Buy me a coffee"
+    "coffee": "Buy me a coffee",
+    "skills": {
+      "download-cv": "Download cv"
+    }
 }
