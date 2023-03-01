@@ -69,7 +69,7 @@ function SkillsList() {
           <FaEnvelope />
           <a href="https://wa.me/+905338829657?text=Hello">pamphilemkp@gmail.com</a>
         </div>
-        <a href="../assets/cv.pdf" className="cv-button" download>{t('skills.download-cv')}</a>
+        <a href="../../assets/cv.pdf" className="cv-button" download>{t('skills.download-cv')}</a>
       </div>
       <div className="skills-parts">
         <div className="frontend">
