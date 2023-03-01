@@ -7,12 +7,12 @@
           "last": "MKP",
           "statement": "Bienvenu sur mon portfolio!"
         },
-        "description": "Je suis un développeur de logiciels à part entière ! Je peux vous aider à construire un produit, une fonctionnalité, ou un site web ; regardez à travers certains de mes travaux et mon expérience ! Si vous aimez ce que vous voyez et avez un projet que vous avez besoin d'être codé, n'hésitez pas à me contacter.",
+        "description": "Enchanté de vous rencontrer. Je suis un développeur de logiciels à part entière et j'ai hâte de vous en parler ! Que vous ayez besoin d'un tout nouveau produit, d'une nouvelle fonctionnalité sympa ou d'un nouveau site Web génial, je peux vous aider. J'ai beaucoup d'expérience à mon actif et j'aimerais que vous jetiez un coup d'œil à certains de mes travaux. Si vous aimez ce que vous voyez et que vous avez un projet qui a besoin d'être codé, n'hésitez pas à me contacter ! Créons ensemble quelque chose d'extraordinaire.",
         "in-touch-button": "Me contacter"
       },
       "projects": {
         "title": "Projects",
-        "description": "Voici quelques-uns de mes projets : certains sont déployés et vous pouvez donc voir la version live et la source, mais d'autres sont encore en cours de déploiement ; seule la source du projet est visible, mais tous les projets seront bientôt déployés pour que vous puissiez voir la démo live."
+        "description": "Des nouvelles excitantes ! J'ai travaillé sur plusieurs projets, et certains d'entre eux sont déjà opérationnels ! Vous pouvez consulter les versions live et même explorer le code source. Mais attendez, il y a plus ! J'ai quelques projets incroyables en cours de réalisation qui sont encore en train d'être déployés, donc vous n'aurez qu'un aperçu du code source pour l'instant, mais gardez un œil sur leurs démos en direct à venir !"
       },
       "about": {
         "description": "Je m'appelle Pamphile Musonda, je suis un développeur web full-stack, je joue aux échecs pendant mon temps libre, j'aime faire de la musculation et lire des livres. Amoureux de la boxe que j'ai commencé à pratiquer depuis l'âge de 14 ans, je suis très passionné et dévoué à mon travail. Enfin, j'aime voyager comme passe-temps et rechercher de nouvelles opportunités intéressantes.",
@@ -23,7 +23,7 @@
           "swa": "Swahili",
           "tr": "Turc"
         },
-        "last-description": "Vous voulez me contacter ? Ma boîte de réception est toujours ouverte. Je travaille actuellement sur un projet passionnant que j'annoncerai bientôt. Si vous avez une question ou si vous voulez simplement me saluer, je ferai de mon mieux pour vous répondre ! ",
+        "last-description": "Vous voulez me contacter ? Ma boîte de réception est toujours ouverte. Je travaille actuellement sur un projet passionnant que j'annoncerai bientôt.  N'hésitez pas si vous avez des questions ou juste à me dire bonjour, et je vous répondrai dès que possible  ",
         "Let-connect": "Connectons-nous"
       },
       "contact": {

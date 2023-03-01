@@ -7,15 +7,15 @@
         "last": "MKP",
         "statement": "Glad to see you here!"
       },
-      "description": "I’m a full-stack software developer! I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need to be coded, don’t hestiate to contact me.",
+      "description": "Nice to meet you. I'm a full-stack software developer and I'm excited to tell you all about it! Whether you need a brand new product, a cool new feature, or an awesome new website, I've got you covered. I've got a whole bunch of experience under my belt and I'd love for you to take a look at some of my work. If you like what you see and you've got a project that needs to be coded up, don't hesitate to reach out! Let's create something amazing together.",
       "in-touch-button": "Get in Touch"
     },
     "projects": {
       "title": "Projects",
-      "description": "Here are a few of my projects some are deployed hence you can see the live version and the source but others are still under deployment only the source of the project is visible but all the projects will be soon deployed for you to see the live demo."
+      "description": "Exciting news! I've been working on several projects, and some of them are already up and running! You can check out the live versions and even explore the source code. But wait, there's more! I've got some amazing projects in the works that are still being deployed, so you'll get a sneak peek of the source code for now, but keep an eye out for their live demos coming soon!"
     },
     "about": {
-      "description": "My name is Pamphile Musonda, i am a full-stack web developer, i play chess in my spare time, like working out and reading books. in love with boxing that i started since i was 14. and I'm very passionate and dedicated to my work. finally i like travelling as a hobby and seekeng for new interesting opportuities.",
+      "description": "Hey, I'm Pamphile Musonda - a full-stack web developer by day and a boxing champ by...well, whenever I have time. I like to think my right hook is as strong as my coding skills. When I'm not throwing punches in the ring, I enjoy playing chess and working out. I'm also a bookworm who loves to read and discover new ideas. I'm serious about my work, but don't worry - I won't make you put on gloves and spar with me. Let's team up and create something awesome!",
       "spoken-languages-title": "Spoken languages",
       "spoken-languages-list": {
         "en": "English",
@@ -23,7 +23,7 @@
         "swa": "Swahili",
         "tr": "Turkish"
       },
-      "last-description": "Want to reach out to me? My inbox is always open. I'm currently working on an exciting project which I will be announcing soon.If you have a question or just want to say hello I'll try my best to get back to you! ",
+      "last-description": "Want to reach out to me? My inbox is always open, and I'm working on an exciting project that I'll announce soon. Drop me a line with your questions or just to say hello, and I'll get back to you as soon as possible!",
       "Let-connect": "Let's connect"
     },
     "contact": {
